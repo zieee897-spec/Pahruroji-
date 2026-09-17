@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Siswa - PAHRUROJI (OZI)</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header & Navigasi -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo"><span id="navBrand">OZI</span>.Porto</a>
+            
+            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#tentang" class="nav-link">Tentang Saya</a></li>
+                    <li><a href="#profil" class="nav-link">Profil</a></li>
+                    <li><a href="#minat-hobi" class="nav-link">Minat & Hobi</a></li>
+                    <li><a href="#cita-cita" class="nav-link">Cita-Cita</a></li>
+                    <li><button id="themeToggleBtn" class="theme-btn">🌙 Dark</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <div class="hero-image">
+                    <img id="displayFotoHero" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400" alt="Foto Profil">
+                </div>
+                <div class="hero-text">
+                    <span class="badge">Siswa Kelas X SMK</span>
+                    <h1 id="displayNamaLengkap">PAHRUROJI</h1>
+                    <p class="nickname">Halo! Panggil aku <strong id="displayNamaPanggilan">OZI</strong> 👋</p>
+                    <p class="jurusan-tag"><span id="displayKelas">DKV</span> - <span id="displayJurusan">DESAIN KOMUNIKASI VISUAL</span></p>
+                    <p class="tagline">"<span id="displayTagline">Semangat berkarya, belajar desain, dan menggapai mimpi!</span>"</p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#tentang" class="btn btn-primary">Tentang Saya</a>
+                        <a href="#profil" class="btn btn-secondary">Lihat Profil</a>
+                        <a href="#modalEdit" id="openEditBtn" class="btn btn-outline">✏️ Edit Profil</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tentang Saya Section -->
+        <section id="tentang" class="section">
+            <div class="container">
+                <h2 class="section-title">Tentang Saya</h2>
+                <div class="card tentang-card">
+                    <p id="displayDeskripsi">Saya adalah siswa kelas X jurusan Desain Komunikasi Visual (DKV) yang ceria, penuh semangat, dan sedang memulai perjalanan awal di dunia kreativitas digital. Saya sangat menyukai hal-hal visual dan terus belajar untuk mengasah keterampilan baru!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Profil Section -->
+        <section id="profil" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Profil Akademik</h2>
+                <div class="grid grid-3">
+                    <div class="card card-info">
+                        <h3>🏫 Kelas</h3>
+                        <p id="displayKelasDetail">DKV</p>
+                    </div>
+                    <div class="card card-info">
+                        <h3>🎨 Jurusan / Program</h3>
+                        <p id="displayJurusanDetail">DESAIN KOMUNIKASI VISUAL</p>
+                    </div>
+                    <div class="card card-info">
+                        <h3>✨ Konsentrasi Keahlian</h3>
+                        <p id="displayKonsentrasiDetail">DESAIN KOMUNIKASI VISUAL</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Minat, Hobi & Bidang Pelajaran -->
+        <section id="minat-hobi" class="section">
+            <div class="container">
+                <h2 class="section-title">Minat, Hobi & Eksplorasi</h2>
+                <div class="grid grid-3">
+                    <div class="card">
+                        <div class="card-icon">📷</div>
+                        <h3>Minat Utama</h3>
+                        <p id="displayMinat">INGIN MENJADI POTO GERAPER</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">⚽</div>
+                        <h3>Hobi & Olahraga</h3>
+                        <p id="displayHobi">FUTSAL, BADMINTON</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🎬</div>
+                        <h3>Bidang Yang Dipelajari</h3>
+                        <p id="displayBidang">DESAIN EDITING VIDIO</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cita-Cita Section -->
+        <section id="cita-cita" class="section bg-light">
+            <div class="container text-center">
+                <h2 class="section-title">Cita-Cita & Motivasi</h2>
+                <div class="card cita-card">
+                    <div class="cita-icon">🏆</div>
+                    <h3 id="displayCitaCita">MANJDI KIPER FUTSAL TERBAIK</h3>
+                    <p class="cita-sub">"Setiap tangkapan dan usaha keras hari ini adalah langkah awal menuju impian masa depan!"</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 Portofolio Siswa SMK Kelas X. Dibuat dengan Semangat Belajar!</p>
+        </div>
+    </footer>
+
+    <!-- Tombol Kembali ke Atas -->
+    <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Kembali ke atas">⬆️</button>
+
+    <!-- Modal Form Edit Profil -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Edit Profil Siswa</h2>
+                <span class="close-btn" id="closeEditBtn">&times;</span>
+            </div>
+            <form id="profileForm" class="modal-body">
+                <div class="form-group">
+                    <label for="inputFoto">Foto Profil (Pilih Gambar)</label>
+                    <input type="file" id="inputFoto" accept="image/*">
+                    <div class="image-preview-container">
+                        <img id="previewFotoModal" src="" alt="Preview Foto" class="preview-img">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputNamaLengkap">Nama Lengkap</label>
+                    <input type="text" id="inputNamaLengkap" placeholder="(NAMA LENGKAP)" required>
+                </div>
+                <div class="form-group">
+                    <label for="inputNamaPanggilan">Nama Panggilan</label>
+                    <input type="text" id="inputNamaPanggilan" placeholder="(NAMA PANGGILAN)" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="inputKelas">Kelas</label>
+                        <input type="text" id="inputKelas" placeholder="(KELAS)" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputJurusan">Jurusan / Program Keahlian</label>
+                        <input type="text" id="inputJurusan" placeholder="(JURUSAN)" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputKonsentrasi">Konsentrasi Keahlian</label>
+                    <input type="text" id="inputKonsentrasi" placeholder="(KONSENTRASI KEAHLIAN)">
+                </div>
+                <div class="form-group">
+                    <label for="inputTagline">Motto / Tagline</label>
+                    <input type="text" id="inputTagline" placeholder="(MOTTO / TAGLINE)">
+                </div>
+                <div class="form-group">
+                    <label for="inputDeskripsi">Deskripsi Diri (Tentang Saya)</label>
+                    <textarea id="inputDeskripsi" rows="3" placeholder="(DESKRIPSI DIRI)"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="inputMinat">Minat</label>
+                    <input type="text" id="inputMinat" placeholder="(MINAT)">
+                </div>
+                <div class="form-group">
+                    <label for="inputHobi">Hobi</label>
+                    <input type="text" id="inputHobi" placeholder="(HOBI)">
+                </div>
+                <div class="form-group">
+                    <label for="inputBidang">Bidang Yang Ingin Dipelajari</label>
+                    <input type="text" id="inputBidang" placeholder="(BIDANG YANG INGIN DIPELAJARI)">
+                </div>
+                <div class="form-group">
+                    <label for="inputCitaCita">Cita-Cita</label>
+                    <input type="text" id="inputCitaCita" placeholder="(CITA-CITA)">
+                </div>
+
+                <div class="modal-actions">
+                    <button type="submit" class="btn btn-primary">Simpan Data</button>
+                    <button type="button" id="resetBtn" class="btn btn-danger">Reset Default</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Notifikasi Toast -->
+    <div id="toast" class="toast">Data berhasil disimpan! ✨</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
